@@ -1,0 +1,28 @@
+[project]
+name = "travel-agent"
+version = "0.1.0"
+description = "LangGraph-based corporate travel agent"
+authors = [{name = "Travel Bot"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "langgraph",
+    "langchain-core",
+    "pydantic>=2",
+    "httpx",
+    "python-dateutil",
+    "redis",
+    "loguru"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
